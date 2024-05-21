@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+header {
+    background-color: rgba(255, 82, 123, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header img {
+    position: relative;
+    top: 10px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.desc {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+.text-div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+}
+
+ul {
+    position: relative;
+}
+
+li {
+    margin: 20px 0px 0px 30px;
+    width: 300px;
+    list-style: none;
+    display: flex;
+}
+
+li::after {
+    position: absolute; 
+    left: -2px;
+    content: '';
+    background: url(../img/Path2.svg) no-repeat;
+    background-position: 40%;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: rgba(255, 97, 85, 1);
+}
+
+ul {
+    padding: 0;
+}
+
+.div-input{
+    margin-top: 40px;
+}
+
+label {
+    font-weight: 600;
+}
+
+#input {
+    margin: 10px 0;
+    width: 100%;
+    height: 56px;
+    border-radius: 10px;
+    padding-left: 15px;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+
+.submit {
+    background-color: rgba(36, 39, 66, 1);
+    height: 56px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.non {
+    color: red;
+    background-color: rgba(255, 96, 85, 0.192);
+    border: 1px solid black;
+}
+
+.label-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.svg-css {
+    padding: 10px;
+    height: 61px;
+    width: 61px;
+    border-radius: 50%;
+    background: rgba(255, 82, 123, 1);
+}
+
+.h2-css {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.congrats {
+    margin-top: 100px;
+}
+
+.desc-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.submit2 {
+    background-color: rgba(36, 39, 66, 1);
+    height: 56px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 85px;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(54, 56, 77, 1);
+    }
+
+    header {
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    header img {
+        height: 400px;
+        width: 400px;
+        position: relative;
+        top: 80px;
+    }
+
+    .container {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        border-radius: 10px;
+        height: 600px;
+        margin-top: 100px;
+        width: 50%;
+        background-color: white;
+    }
+
+    .congrats h2 {
+        font-size: 56px;
+    }
+
+    .submit2 {
+        margin-top: 10px;
+    }
+
+    .congrats {
+        margin-top: 0px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        height: 600px;
+        margin-top: 60px;
+    }
+}
